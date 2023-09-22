@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture> 
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_m.png" type="image/png"> 
+        <img src="imagens/imagem_g.png" alt="imagem flexível"> </picture>
+
+        <hr>
+
+        <h1>Reproduzindo Áudios</h1>
+        <p>Vamos aprender a reproduzir áudios em HTML5. O áudio abaixo é uma música de Rock!</p>
+        <audio src="midias/Out_On_My_Skateboard_Mini_Vandals.mp3" controls autoplay></audio>
+        <p>Abaixo tem uma áudio de Trilha Sonora de um Filme</p>
+        <audio preload="metadata" controls>
+            <source src="midias/The_Mumbai_Beat_Hanu__Dixit.mp3" type="audio/mpeg">
+            <source src="midias/The_Mumbai_Beat_Hanu__Dixit.ogg" type="audio/ogg">
+            <p> - SEU NAVEGADOR NÃO SUPORTA ÁUDIO! -</p>
+        </audio>
+
+
+</body>
+</html>
